@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Registra tu cancion favorita!</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <div class="container mx-auto p-8">
+      <h1 class="text-2xl font-bold mb-4">Registrar nueva cancion:</h1>
+      <form action="/register" method="POST">
+        <div class="mb-4">
+          <label for="name_music" class="block text-gray-700"
+            >Nombre de la cancion:</label
+          >
+          <input
+            type="text"
+            class="form-input mt-1 block w-full"
+            name="name_music"
+            required
+          />
+        </div>
+        <div class="mb-4">
+          <label for="author_music" class="block text-gray-700"
+            >Nombre del cantante:</label
+          >
+          <input
+            type="text"
+            class="form-input mt-1 block w-full"
+            name="author_music"
+            required
+          />
+        </div>
+        <div class="mb-4">
+          <label for="type_music" class="block text-gray-700"
+            >Tipo de cancion:</label
+          >
+          <input
+            type="text"
+            class="form-input mt-1 block w-full"
+            name="type_music"
+            required
+          />
+        </div>
+        <button
+          type="submit"
+          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        >
+          Registrar cancion
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

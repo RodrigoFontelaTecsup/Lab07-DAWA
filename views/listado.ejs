@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Musicas registradas!</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <div class="container mx-auto p-8">
+      <h1 class="text-2xl font-bold mb-4">Listado de musicas:</h1>
+      <% musics.forEach(function(music) { %>
+      <strong class="font-semibold mb-4">Nombre de cancion:</strong> <%=
+      music.name_music %><br />
+      <strong class="font-semibold mb-4">Autor de la cancion:</strong> <%=
+      music.author_music %><br />
+      <strong class="font-semibold mb">Tipo de cancion:</strong> <%=
+      music.type_music %><br />
+      <br />
+      <% }); %>
+      <a
+        href="/"
+        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded inline-block mt-3"
+        >Clic aqui para registrar otra cancion!</a
+      >
+    </div>
+  </body>
+</html>
